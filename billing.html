@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Processing</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+        label { font-weight: bold; display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 20px; padding: 10px; background: blue; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Billing Processing</h2>
+        <form id="billingForm">
+           
+            
+            <label>Appointment Date</label>
+            <input type="date" value="2022-08-15">
+            
+            
+            
+            <label>Patient Name</label>
+            <input type="text" value="John Smith">
+            
+            <label>Provider Name</label>
+            <input type="text" value="Dr. Emily Johnson">
+            
+
+            
+            <label>Work Status</label>
+            <input type="text" value="IN PROGRESS" readonly>
+            
+            <h3>Details</h3>
+            <label>Appointment Cost</label>
+            <input type="text" value="$150.75">
+            
+            <label>Created Date/Time</label>
+            <input type="datetime-local" value="2025-02-11T06:32">
+            
+            <label>Insurance Verified</label>
+            <input type="text" value="true">
+            
+
+            
+            <label>Patient Contact Number</label>
+            <input type="tel" value="123-456-7890">
+            
+           
+            
+
+            
+            <label>Resolved Date/Time</label>
+            <input type="datetime-local">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('billingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Billing details submitted successfully!');
+        });
+    </script>
+</body>
+</html>
